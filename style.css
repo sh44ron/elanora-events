@@ -1,0 +1,210 @@
+body{
+    background-color: #F8E8E3;
+}
+.heropar{
+    position: relative;
+}
+.herochild{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+ transform: translateX(60px) translateY(50px);
+ 
+}
+.aboutpar{
+   position: relative;
+
+}
+.aboutchild{
+        position: absolute;
+    top: 30px;
+    left: 30px;
+ transform: translateX(950px) translateY(100px);
+}
+
+.site-footer {
+  background-color: #3B4236;
+  color: #fff;
+  padding: 40px 60px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.3fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-tagline {
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin: 8px 0 0;
+  color: #EADBC8;
+}
+
+.footer-col h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #EADBC8;
+}
+
+.footer-col a {
+  color: #EADBC8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.contact-list i {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.social-icons a:hover {
+  color: #B7676F;
+}
+
+
+@media (max-width: 742px) {
+  .heropar img {
+    width: 100%;
+    min-height: 380px;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .herochild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin: 0 !important;
+    padding: 16px !important;
+    max-width: 100% !important;
+    height: 100%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.55);  
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .herochild h1 {
+    font-size: 36px;
+  }
+
+  .herochild h1 span {
+    font-size: 42px !important;
+  }
+
+  .herochild p {
+    font-size: 17px;
+  }
+
+  .herochild button {
+    color: rgb(243, 245, 243);
+    font-weight: 800;
+    font-size: 20px;
+    padding: 6px 12px;
+  }
+    /* cards: one centered column */
+  .cardsrow {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* about section: text overlaps the image */
+  .aboutpar {
+    padding-top: 0 !important;
+    margin-top: 40px;
+  }
+
+  .aboutpar img {
+    width: 100%;
+    min-height: 420px;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .aboutchild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin: 0 !important;
+    padding: 16px !important;
+    max-width: 100% !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.55);  
+  }
+
+  .aboutchild h1 {
+    font-size: 32px;
+  }
+
+  .aboutchild h1 span {
+    font-size: 38px !important;
+  }
+
+  .aboutchild p {
+    font-size: 16px;
+  }
+
+  .aboutchild p br {
+    display: none;   
+  }
+
+  .aboutchild button {
+    font-size: 16px;
+    padding: 6px 12px;
+    align-self: flex-start;
+  }
+
+  .site-footer {
+    padding: 32px 20px;
+    text-align: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    justify-items: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elanora</title>
+    <!-- css -->
+     <link rel="stylesheet" href="./style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+      .font-roboto {
+        font-family: "Roboto Condensed", sans-serif;
+      }
+    </style>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <!-- icon -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="font-roboto">
+    <!-- navbar -->
+    <nav class="navbar md:navbar-expand bg-1" data-bs-theme="light" style="background-color: #EADBC8;">
+      <div class="container-fluid">
+        <img src="./images/Logo.png" alt="logo" width="250">
+        
+        <!-- Mobile Toggler (hidden on desktop via md:d-none) -->
+        <button class="btn-icon navbar-toggler md:d-none" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+
+        <!-- Drawer / Content wrapper (becomes inline on desktop) -->
+        <dialog class="drawer drawer-end md:drawer-open md:position-static md:bg-transparent md:shadow-none md:border-0" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+          <div class="drawer-header md:d-none">
+            <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          
+          <div class="drawer-body mb-2 md:mb-0 md:d-flex md:align-items-center md:w-100 lg:ms-auto">
+            <ul class="nav navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold fg-primary " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold fg-primary" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold fg-primary" href="#">Gallery</a>
+              </li>
+             
+            </ul>
+
+            <!-- Form & Button: Left on mobile (me-auto), right on desktop (md:ms-auto) -->
+            <form class="hstack gap-2 me-auto md:ms-auto" role="search">
+              <button type="button" class="btn-solid theme-primary btn-lg fw-semibold lg:ms-auto" style="--bs-btn-bg: #B7676F; --bs-btn-border-color: #B7676F; --bs-btn-hover-bg: #6B7F61; --bs-btn-hover-border-color: #EADBC8; --bs-btn-color: #fff;">Contact Us</button>
+            </form>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+      
+    <!-- hero section -->
+<div class="heropar">
+          <img src="./images/h1.png" class="img-fluid"alt="hero image">
+          <div class="p-3 m-2 p-md-5 m-md-5 herochild" style="max-width: 90%;">
+            <h1 style="color: black;">Turning <span style="color: #b05a65; font-style: italic; font-size: 50px; ">Moments</span> <br> Into <span style="color: #b05a65; font-style: italic; font-size: 50px;">Memories</span></h1>
+            <p style="color: black; font-weight: 500;">We plan, design and manage unforgettable events that reflect your story and style.</p>
+             <button type="button" class="btn-solid theme-primary btn-lg fw-semibold lg:ms-auto m-2 p-2" style="--bs-btn-bg: #B7676F; --bs-btn-border-color: #B7676F; --bs-btn-hover-bg: #6B7F61; --bs-btn-hover-border-color: #EADBC8; --bs-btn-color: #fff;">Plan Your Event</button>
+             <button type="button" class="btn-subtle theme-primary">View Our Work</button>
+            
+
+          </div>
+  
+</div>   
+ <!-- events -->
+   <h1 class="p-9 p-md-5" style="color: black;">Our Events <br> For <span style="color: #b05a65; font-style: italic; font-size: 50px;">Every Occasion</span></h1>
+   <!-- cards -->
+    <div class="cardsrow ps-9 md:d-flex md:gap-10">
+      <section class="card bg-white" style="max-width: 320px;color: black;">
+    <img src="./images/c1.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">Weddings</h4>
+      <p class="card-text">A day as unique as your love story</p>
+      <a href="#" class="btn-outline theme-accent">Show More...</a>
+    </div>
+  </section>
+  <section class="card bg-white" style="max-width: 320px;color: black;">
+    <img src="./images/c2.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">Birthday Parties</h4>
+      <p class="card-text">Celebrate every milestone</p>
+      <a href="#" class="btn-outline theme-accent">Show More...</a>
+    </div>
+  </section>
+  <section class="card bg-white" style="max-width: 320px;color: black;">
+    <img src="./images/c3.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">Corporate Events</h4>
+      <p class="card-text">Professional events, flawlessly executed</p>
+      <a href="#" class="btn-outline theme-accent">Show More...</a>
+    </div>
+  </section>
+  <section class="card bg-white" style="max-width: 320px;color: black;">
+    <img src="./images/c4.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">Baby Showers</h4>
+      <p class="card-text">Cherish new beginnings</p>
+      <a href="#" class="btn-outline theme-accent">Show More...</a>
+    </div>
+  </section>
+    </div>
+    <!-- about thing -->
+    <div class="aboutpar pt-5">
+          <img src="./images/a1.png" class="img-fluid"alt="hero image">
+          <div class="p-3 m-2 p-md-5 m-md-5 aboutchild" style="max-width: 90%;">
+            <h1 style="color: black;">Why Choose <span style="color: #b05a65; font-style: italic; font-size: 50px; ">Elanora?</span> </h1>
+            <p style="color: black; font-weight: 500;">We believe every event is a story waiting to be told. <br> Our team combines creativity, attention to detail and <br> seamless execution to make your special moments <br> truly unforgettable.</p>
+            <button type="button" class="btn-solid theme-primary btn-lg fw-semibold lg:ms-auto m-2 p-2" style="--bs-btn-bg: #B7676F; --bs-btn-border-color: #B7676F; --bs-btn-hover-bg: #6B7F61; --bs-btn-hover-border-color: #EADBC8; --bs-btn-color: #fff;">Learn More About Us &rarr;</button>
+             
+      </div> 
+      </div>     
+      <!-- client review -->
+       <h1 class="p-3 md:m-3 text-center" style="color: black;">What Our Clients Say</h1>
+      <!-- r slides -->
+       <div id="carouselExampleAutoplaying" class="carousel slide align-items-center mx-auto" data-bs-autoplay="true" style="max-width: 600px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/r1.png" class="d-block w-100 rounded-5" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/r2.png" class="d-block w-100 rounded-5" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/r3.png" class="d-block w-100 rounded-5" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/r4.png" class="d-block w-100 rounded-5" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/r5.png" class="d-block w-100 rounded-5" alt="...">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</div>
+
+
+    <!-- footer -->
+     <footer class="site-footer">
+  <div class="footer-grid">
+
+    <!-- brand -->
+    <div class="footer-brand">
+      <img src="./images/Logo.png" alt="Elanora logo" width="200">
+      <p class="footer-tagline">PLAN TODAY, MEMORIES FOREVER</p>
+    </div>
+
+    <!-- quick links -->
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </div>
+
+    <!-- contact -->
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul class="contact-list">
+        <li><i class="bi bi-telephone-fill"></i> +91 98765 43210</li>
+        <li><i class="bi bi-envelope"></i> hello@elanora.in</li>
+        <li><i class="bi bi-geo-alt-fill"></i> Kannur, Kerala</li>
+      </ul>
+    </div>
+
+    <!-- social -->
+    <div class="footer-col">
+      <h5>Follow Us</h5>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+     
+</body>
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</html>
